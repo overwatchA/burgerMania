@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    color: #38200d;
+}
+
+.container-all-in{
+}
+.hero {
+    height: 100vh;
+    /* background-image: url(./img/v642-nap-37-fastfood.jpg);
+    background-size: 600px; */
+    background-color: rgb(253, 214, 106);
+}
+
+.hero_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    padding-bottom: 0;
+}
+
+.hero_header .logo{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.header_right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.header_right p{
+    font-family: 'Lato', sans-serif;
+}
+
+.header_right .menu{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    list-style: none;
+    display: flex;
+    font-size: 1.3rem;
+    gap: 2rem;
+    letter-spacing: 2px;
+}
+
+.hero_main{
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    padding-inline: 6rem;
+}
+
+.hero_main > div{
+    flex: 1;
+}
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_text h4{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: .6rem;
+    border: 2px dashed #38200d;
+    width: max-content;
+    margin-bottom: 1rem;
+}
+
+.main_text h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 5rem;
+    line-height: 1;
+    text-shadow: 3px 3px 0 white;
+}
+
+.main_text h3{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    text-shadow: 3px 3px 0 white;
+}
+
+.main_img{
+    display: flex;
+    align-items: center;
+    padding-block: 4rem;
+    position: relative;
+}
+.main_img img{
+    width: 500px;
+
+}
+
+.sale{
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    background-color: #be1c1c;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 3.6rem;
+    border: 2px dashed white;
+    outline: 5px solid #be1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.price, .only, .price small{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.price{
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.price small{
+    font-size: 1.4rem;
+}
+
+.only{
+    font-size: 1.8rem;
+    line-height: 1;
+    letter-spacing: 4px;
+}
+
+/***GRID SISTEM
+HOLA*/
+
+.grid{
+    margin: auto;
+    max-width: 1350px;
+    padding: 4rem 9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "item1 item2"
+    "item1 item3";
+    gap: 2rem;
+    
+}
+
+.grid_item{
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+}
+
+.grid_item h4, .grid_item h5{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+}
+
+.grid_item h4{
+    font-size: 1.6rem;
+}
+.grid_item h5{
+    font-size: 1.2rem;
+}
+
+.grid_item1{
+    grid-area: item1;
+    background-image: url(./img/bigOneBurger.jpg);
+
+}
+
+.grid_item2{
+    grid-area: item2;
+    background-image: url(./img/little1burger.jpg);
+}
+
+.grid_item3{
+    grid-area: item3;
+    background-image: url(./img/little2burger.jpg);
+}
+
+/*Enjoy*/
+
+.enjoy{
+    margin: auto;
+    max-width: 1350px;
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.titles{
+    padding-inline: 8rem; /*padding a los lados**/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.titles h4{
+    background-color: rgb(255, 204, 66);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+}
+
+.titles h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+}
+
+.titles p{
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.cards{
+    padding-top: .8rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.card img{
+    max-width: 100%;
+}
+
+.card h4{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.card p{
+    font-family: 'Lato', sans-serif;
+    width: 80%;
+}
+
+.card a{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #be1c1c;
+    padding: .5rem .8rem;
+    color: white;
+}
+
+/* events */
+
+.events{
+    margin: auto;
+    max-width: 1350px;
+    padding: 7rem;
+    padding-top: 0;
+}
+
+.text{
+    padding-top: 1rem;
+}
+
+.tarjeta{
+    display: flex;
+    gap:2rem;
+    padding: 2rem;
+    box-shadow: 10px 10px 20px rgb(204, 204, 204);
+}
+
+.text{
+    flex: 1;
+    min-width: 0;
+    position: relative;
+}
+
+.text h4{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.text h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.text p{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.7;
+    color: rgb(83, 83, 83);
+}
+
+.dots{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+
+}
+
+.dot{
+    background-color: rgb(221, 221, 221);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.dot1{
+    background-color: rgb(248, 197, 30);
+}
+
+.tarjeta_img{
+    flex: 1.25;
+    min-width: 0;
+}
+
+.tarjeta_img img{
+    max-width: 100%;
+}
+
+/*reservation*/
+
+.reservation{
+    margin: auto;
+    max-width: 1350px;
+    padding: 7rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-repeat: no-repeat;
+    background-image: url(./img/BurgerTopView.png), url(./img/burgerTopViewLeft.png), url(./img/tomatoSauce.png);
+    background-size: 300px, 200px, 200px;
+    background-position: 1050px 90px, 0px 0px, 150px 100px;
+}
+
+.reservation_titles{
+    text-align: center;
+}
+
+.reservation_titles h4{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.reservation_titles h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.reservation_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "name email"
+    "date time"
+    "people button";
+    width: 36rem;
+    gap: 1rem;
+}
+
+.reservation_form input{
+    padding: .75rem 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.reservation_form .button{
+    font-family: 'Alfa Slab One', cursive;
+    border: 0;
+    background-color: #be1c1c;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+/*footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    padding: 3rem 2rem;
+    background-image: url(./img/burgerInTableTopView.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+.footer_top, .footer_bottom{
+    z-index: 1;
+}
+
+.footer_top{
+    display: flex;
+    padding-block: 3rem;
+}
+
+footer h2, footer p, footer i{
+    color: white ;
+}
+.footer_top > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.footer_top h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.footer_top p{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2;
+    padding-top: 1rem;
+}
+
+/* esto sirve para llamar al segundo div del footer_top o bien podria llamar a la clase contact pero quiero recordar esta forma*/
+.footer_top > div:nth-child(2){ 
+    align-items: flex-end;
+}
+
+.contact p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+.footer_bottom p{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.footer_icons{
+    display: flex;
+    gap: .7rem
+}
+
+
+@media screen and (max-width:1350px) {
+    .reservation{
+        background-size: 300px, 200px, 200px;
+        background-position: 1150px 90px, 0px 0px, 150px 100px;
+    }
+    .hero_main{
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    padding-inline: 6rem;
+}
+
+.hero_main > div{
+    flex: 1;
+}
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_text h4{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: .6rem;
+    border: 2px dashed #38200d;
+    width: max-content;
+    margin-bottom: 1rem;
+}
+
+.main_text h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 5rem;
+    line-height: 1;
+    text-shadow: 3px 3px 0 white;
+}
+
+.main_text h3{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    text-shadow: 3px 3px 0 white;
+}
+
+.main_img{
+    display: flex;
+    align-items: center;
+    padding-block: 4rem;
+    position: relative;
+}
+.main_img img{
+    width: 500px;
+
+}
+
+.sale{
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    background-color: #be1c1c;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 3.6rem;
+    border: 2px dashed white;
+    outline: 5px solid #be1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.price, .only, .price small{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.price{
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.price small{
+    font-size: 1.4rem;
+}
+
+.only{
+    font-size: 1.8rem;
+    line-height: 1;
+    letter-spacing: 4px;
+}
+}
+
+@media screen and (max-width:1290px){
+    .events .tarjeta_img{
+        display: flex;
+        align-items: center;
+    }
+    .text h2{
+        margin-bottom: 1rem;
+    }
+    .text p{
+        padding-bottom: 4rem ;
+    }
+}
+@media screen and (max-width:1200px){   
+    .reservation{
+        background-image: none;
+        gap: 0;
+    }
+    
+}
+
+@media screen and (max-width:1050px) {
+    .hero_main{
+        flex-direction: column;
+        padding-inline: 2.8rem;
+        padding-top: 4rem;
+    }
+    .main_text{
+        margin: auto;
+        align-items: center;
+    }
+    .main_img{
+        margin: auto;
+        padding-top: 4rem;
+    }
+    
+    .main_img img{
+        max-width: 100%;
+    }
+    .events{
+        padding: 7rem;
+        padding-top: 0;
+    }
+    .events .tarjeta{
+        flex-direction: column ;
+    }
+    .events .tarjeta_img{
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+    .text{
+        padding:0
+    }
+    .text h2{
+        margin-bottom: 1rem;
+    }
+    .text p{
+        padding-bottom: 2rem ;
+    }
+    .dots{
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .hero{
+        height: 100%;
+    }
+    .hero_header{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .header_right{
+        align-items: flex-start;
+    }
+    .grid{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .grid_item{
+        flex-grow: 1;
+    }
+    .grid_item1{
+        padding-bottom: 6rem;
+    }
+    .enjoy{
+        padding: 2rem;
+    }
+    .titles{
+        padding: 0rem;
+    }
+    .cards{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .events{
+        padding: 2rem;
+    }
+    .events .tarjeta{
+        flex-direction: column ;
+    }
+    .events .tarjeta_img{
+        order: -1;
+    }
+    .text{
+        padding:0
+    }
+    .text h2{
+        margin-bottom: 1rem;
+    }
+    .text p{
+        padding-bottom: 2rem ;
+    }
+    .dots{
+        bottom: 0;
+    }
+    .reservation{
+        padding: 2rem;
+        background-image: none;
+        gap: 0;
+    }
+    .reservation_form{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .footer{
+        padding: 2rem;
+    }
+    .footer_top{
+        flex-direction: column;
+        padding: 0;
+        gap: 1rem; 
+    }
+    .footer_top > div:nth-child(2){
+        align-items: flex-start;
+    }
+    .contact p{
+        font-size: 1rem;
+    }
+    .footer_bottom{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer_bottom .footer_icons{
+        order: -1;
+    }
+}
+
+@media screen and (max-width:480px) {
+    
+    .hero_main{
+        padding-inline: 2.8rem;
+        padding-top: 2rem;
+    }
+    .main_img{
+        padding-top: 2rem;
+    }
+    .main_text{
+    margin: auto;
+    align-items: flex-start;
+}
+}
