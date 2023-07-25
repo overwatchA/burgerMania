@@ -10,7 +10,6 @@
 .container-all-in{
 }
 .hero {
-    height: 100vh;
     /* background-image: url(./img/v642-nap-37-fastfood.jpg);
     background-size: 600px; */
     background-color: rgb(253, 214, 106);
@@ -21,6 +20,8 @@
     justify-content: space-between;
     padding: 3rem;
     padding-bottom: 0;
+    max-width: 1350px;
+    margin: auto;
 }
 
 .hero_header .logo{
@@ -82,12 +83,14 @@
     font-size: 5rem;
     line-height: 1;
     text-shadow: 3px 3px 0 white;
+    font-weight: 100;
 }
 
 .main_text h3{
     font-family: 'Alfa Slab One', cursive;
     font-size: 3rem;
     text-shadow: 3px 3px 0 white;
+    font-weight: 100;
 }
 
 .main_img{
@@ -221,6 +224,7 @@ HOLA*/
 .titles h2{
     font-family: 'Alfa Slab One', cursive;
     font-size: 3rem;
+    font-weight: 100;
 }
 
 .titles p{
@@ -490,12 +494,23 @@ footer h2, footer p, footer i{
     gap: .7rem
 }
 
+@media screen and (min-width: 1350px){
+    .main_img{
+        margin-bottom: 2.8rem;
+    }
+    
+}
 
-@media screen and (max-width:1350px) {
+
+@media screen and (max-width:1366px) {
     .reservation{
         background-size: 300px, 200px, 200px;
         background-position: 1150px 90px, 0px 0px, 150px 100px;
     }
+    .hero{
+        height: 100vh;
+    }
+
     .hero_main{
     max-width: 1350px;
     margin: auto;
@@ -739,14 +754,41 @@ footer h2, footer p, footer i{
 @media screen and (max-width:480px) {
     
     .hero_main{
-        padding-inline: 2.8rem;
+        padding-inline: 2rem;
         padding-top: 2rem;
+    }
+
+    .hero_header{
+        padding-inline: 2rem;
+    }
+
+    .header_right .menu{
+        font-size: 1.2rem;
+        justify-content: space-between;
+    }
+
+    .header_right nav{
+        width: 100%;
     }
     .main_img{
         padding-top: 2rem;
     }
-    .main_text{
-    margin: auto;
-    align-items: flex-start;
+    
+    .main_text h4{
+        font-size: 1rem;
+    }
+
+    .main_text h2{
+        font-size: 4.2rem;
+    }
+    .main_text h3{
+        font-size: 2.8rem;
+    }
 }
+
+@media screen and (max-width:480px) {
+    .header_right .menu{
+        font-size: 1.1rem;
+        gap: 0;
+    }
 }
